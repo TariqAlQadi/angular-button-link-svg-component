@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-button-link',
+  selector: 'bl',
   templateUrl: './button-link.component.html',
-  styleUrls: ['./button-link.component.scss']
+  styleUrls: ['./button-link.component.scss'],
 })
 export class ButtonLinkComponent {
+  @Input() routerLink = '';
+  @Input() type = '';
+  @Input() text = '';
+  @Input() variant = '';
 
+  @Input() svgWidth = '';
+  @Input() svgFill = '';
+  @Input() svgVariant = '';
+  @Input() svgTitle = '';
 }
