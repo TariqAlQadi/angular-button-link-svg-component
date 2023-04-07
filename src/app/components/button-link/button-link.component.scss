@@ -1,0 +1,16 @@
+//general link stylings
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+// general button stylings
+.button {
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}

@@ -1,15 +1,13 @@
-<!-- LINK -->
-<div *ngIf="variant === ''" class="link">
-  <a routerLink="{{ routerLink }}">{{ text }}</a>
-</div>
+<!-- LINK VARIANT-->
+<a *ngIf="variant === ''" routerLink="{{ routerLink }}">{{ text }}</a>
 
-<!-- BUTTON -->
+<!-- BUTTON VARIANT -->
 <button *ngIf="variant !== ''" type="{{ type }}" class="{{ variant }} button">
-  {{ text }}
   <app-svg
     title="{{ svgTitle }}"
     variant="{{ svgVariant }}"
     width="{{ svgWidth }}"
     fill="{{ svgFill }}"
   ></app-svg>
+  {{ text }}
 </button>

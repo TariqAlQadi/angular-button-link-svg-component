@@ -7,11 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonLinkComponent {
   @Input() routerLink = '';
-  @Input() type = '';
+  @Input() type = 'button';
   @Input() text = '';
   @Input() variant = '';
 
-  @Input() svgWidth = '';
+  @Input() svgWidth = '0px';
   @Input() svgFill = '';
   @Input() svgVariant = '';
   @Input() svgTitle = '';
