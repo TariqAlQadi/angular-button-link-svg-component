@@ -1,11 +1,21 @@
-<!-- link variant (no variant) -->
-<bl text="This is a Link" routerLink="#"></bl>
+<!-- link variant (no variant property) -->
+<bl text="This is a Link" routerLink="/possible/route"></bl>
 
 <!-- button variants(default: type:button) - variants declared in scss -->
-<bl variant="text" type="button" text="Text Button"></bl>
-<bl variant="outline" text="Outline Button"></bl>
-<bl variant="contained" text="Contained Button"></bl>
 <bl
+  (click)="message('text')"
+  variant="text"
+  type="button"
+  text="Text Button"
+></bl>
+<bl (click)="message('outline')" variant="outline" text="Outline Button"></bl>
+<bl
+  (click)="message('contained')"
+  variant="contained"
+  text="Contained Button"
+></bl>
+<bl
+  (click)="message('svg & text')"
   variant="save"
   type="submit"
   text="SVG and Text"
@@ -15,6 +25,7 @@
   svgTitle="SVG button with text"
 ></bl>
 <bl
+  (click)="message('svg only')"
   variant="delete"
   type="submit"
   svgVariant="delete"
