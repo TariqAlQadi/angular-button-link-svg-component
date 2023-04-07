@@ -2,15 +2,63 @@
 a {
   text-decoration: none;
   color: currentColor;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-// general button stylings
+//general button stylings
 .button {
   cursor: pointer;
-  border: 1px solid lightgrey;
+  border: none;
   background-color: transparent;
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
+}
+
+//text button variant
+.text {
+  &:hover {
+    background-color: lightgray;
+  }
+}
+
+//outline button variant
+.outline {
+  border: 1px solid lightgray;
+
+  &:hover {
+    background-color: lightgray;
+  }
+}
+
+//contained button variant
+.contained {
+  color: white;
+  background-color: darkgray;
+
+  &:hover {
+    background-color: lightgray;
+  }
+}
+
+//save button variant
+.save {
+  background-color: green;
+  color: white;
+  &:hover {
+    background-color: rgb(74, 176, 74);
+  }
+}
+
+//delete button variant
+.delete {
+  border: 1px solid rgb(238, 172, 172);
+
+  &:hover {
+    background-color: rgb(238, 172, 172);
+  }
 }

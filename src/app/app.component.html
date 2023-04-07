@@ -1,19 +1,24 @@
 <!-- link variant (no variant) -->
-<bl text="This is a Link"></bl>
+<bl text="This is a Link" routerLink="#"></bl>
 
-<!-- button variants(default: type:button) - variants declared in scss) -->
-<bl variant="text" type="button" text="This is Button with Text"></bl>
-<bl
-  variant="contained"
-  svgVariant="save"
-  svgWidth="20px"
-  svgFill="black"
-  text="Text with SVG"
-></bl>
+<!-- button variants(default: type:button) - variants declared in scss -->
+<bl variant="text" type="button" text="Text Button"></bl>
+<bl variant="outline" text="Outline Button"></bl>
+<bl variant="contained" text="Contained Button"></bl>
 <bl
   variant="save"
   type="submit"
+  text="SVG and Text"
   svgVariant="save"
-  svgWidth="20px"
-  svgFill="black"
+  svgWidth="25px"
+  svgFill="white"
+  svgTitle="SVG button with text"
+></bl>
+<bl
+  variant="delete"
+  type="submit"
+  svgVariant="delete"
+  svgWidth="25px"
+  svgFill="red"
+  svgTitle="SVG button"
 ></bl>
