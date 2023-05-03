@@ -6,13 +6,13 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./button-link.component.scss'],
 })
 export class ButtonLinkComponent {
-  @Input() routerLink = '';
-  @Input() type = 'button';
-  @Input() text = '';
-  @Input() variant = '';
+  @Input() routerLink: string = '';
+  @Input() type: string = 'button';
+  @Input() text: string = '';
+  @Input() variant: string = '';
 
-  @Input() svgWidth = '0px';
-  @Input() svgFill = '';
-  @Input() svgVariant = '';
-  @Input() svgTitle = '';
+  @Input() svgWidth: string = '0px';
+  @Input() svgFill: string = '';
+  @Input() svgVariant: string = '';
+  @Input() svgTitle: string = '';
 }

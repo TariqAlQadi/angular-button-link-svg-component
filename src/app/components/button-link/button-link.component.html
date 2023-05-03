@@ -1,5 +1,5 @@
 <!-- LINK VARIANT-->
-<a *ngIf="variant === ''" routerLink="{{ routerLink }}">{{ text }}</a>
+<a *ngIf="variant === ''" [routerLink]="routerLink">{{ text }}</a>
 
 <!-- BUTTON VARIANT -->
 <button *ngIf="variant !== ''" type="{{ type }}" class="{{ variant }} button">

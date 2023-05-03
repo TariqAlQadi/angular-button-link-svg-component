@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonLinkComponent } from './components/button-link/button-link.component';
 import { SvgComponent } from './components/svg/svg.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent, ButtonLinkComponent, SvgComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule],
   providers: [],
   bootstrap: [AppComponent],
 })

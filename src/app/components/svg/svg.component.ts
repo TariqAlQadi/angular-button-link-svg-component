@@ -10,13 +10,13 @@ interface SvgPaths {
   templateUrl: './svg.component.html',
 })
 export class SvgComponent implements OnInit {
-  @Input() fill = '';
-  @Input() width = '';
-  @Input() variant = '';
+  @Input() fill: string = '';
+  @Input() width: string = '';
+  @Input() variant: string = '';
 
   constructor() {}
 
-  path = '';
+  path: string = '';
 
   //all svg paths
   svgs: SvgPaths = {
