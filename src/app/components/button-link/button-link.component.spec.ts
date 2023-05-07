@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ButtonLinkComponent } from './button-link.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('ButtonLinkComponent', () => {
   let component: ButtonLinkComponent;
@@ -9,6 +10,7 @@ describe('ButtonLinkComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ButtonLinkComponent],
+      schemas: [NO_ERRORS_SCHEMA],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ButtonLinkComponent);
